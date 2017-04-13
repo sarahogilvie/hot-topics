@@ -1,0 +1,318 @@
+/*
+COLOUR SCHEME:
+Orange: #FF8473
+Orange-Pink: #E86973
+Pink: #FF79C6
+Purple-Pink: #E369E8
+Purple: #572F69
+*/
+
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans');
+
+/*MOBILE*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Opens Sans", "arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.masthead-bg {
+    padding: 5% 0;  
+    background-color: #E86973;
+    background-image: url(../img/masthead.jpg);
+    background-size: cover;
+}
+
+#tag-line {
+    color: #572F69;
+    transition: all 500ms ease-out;
+    text-shadow: 2px 2px #E86973;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box {
+    max-width: 60rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin: 0.5rem 0 0 0;
+    font-style: italic;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo:link, logo:visited, .logo:hover, .logo:active {
+    color: #FF79C6;
+}
+
+/*navigation*/
+.nav-bg li {
+    display: inline;
+}
+
+.nav-bg li a {
+    display: block;
+    padding: 1rem;
+    margin: 0 0 0.5rem 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-bg li a:link {
+    background-color: #FF8473;
+}
+
+.nav-bg li a:visited {
+    background-color: #E86973;
+}
+
+.nav-bg li a:hover {
+    background-color: #E86973;
+}
+
+.nav-bg li a:active {
+    background-color: #E369E8;
+}
+
+
+/*main-content*/
+.main-content-bg .box p {
+    text-align: left;
+}
+
+.editorials {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
+/*form*/
+#first-name {
+    width: 100%;
+    border: 2pt solid #E86973;
+    padding: 0.5rem;
+}
+
+#email {
+    width: 100%;
+    border: 2pt solid #E86973;
+    padding: 0.5rem;
+}
+
+#subject {
+    width: 100%;
+    border: 2pt solid #E86973;
+    padding: 0.5rem;
+}
+
+#comments {
+    width: 100%;
+    border: 2pt solid #E86973;
+    padding: 0.5rem;
+}
+
+#submit {
+    width: 100%;
+    background-color: #FF8473;
+    color: #ffffff;
+    padding: 1rem;
+    border: none;
+    margin: 0.5rem 0;
+}
+
+#submit:link {
+    background-color: #FF8473;
+}
+
+#submit:visited {
+    background-color: #E86973;
+}
+
+#submit:hover {
+    background-color: #E86973;
+}
+
+#submit:active {
+    background-color: #E369E8;
+}
+
+.container {
+    text-align: left;
+}
+
+.social-media {
+    padding-top: 1rem;
+}
+
+/*footer*/
+
+footer {
+    background-color: #572F69;
+    padding: 1rem;
+}
+
+.footer-bg li {
+    display: inline;
+}
+
+.footer-bg li a {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0.5rem 0 0;
+}
+
+.footer-bg li:last-child a {
+    margin: 0;
+}
+
+.footer-bg li a:link {
+    color: #FF8473;
+}
+
+.footer-bg li a:visted {
+    color: #E86973;
+}
+
+.footer-bg li a:hover {
+    color: #E86973;
+}
+
+.footer-bg li a:active {
+    color: #E369E8;
+}
+
+.contact {
+    color: #FF8473;
+}
+
+.contact hr {
+    border: 1pt solid #E86973;
+}
+
+/*TABLET*/
+@media screen and (min-width: 35rem) {
+    
+    body {
+        font-size: 1rem;
+    }
+    
+    .box {
+        margin: 2rem;
+    }
+    
+    /*adjusting nav*/
+    .nav-bg li a {
+        width: calc(50% - 1rem + 0.5rem);
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    
+    .nav-bg li:last-child a {
+        margin: 0;
+    }
+    
+    /*adjusting image*/
+    figure {
+        width: 40%;
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    
+    figcaption {
+        text-align: left;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 64rem) {
+    
+    /*adjusting nav*/
+    .logo {
+        float: left;
+        margin-left: 20%;
+    }
+    
+    .nav-bg li a {
+        width: calc(33.3% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    
+    .nav-bg li:last-child a {
+        margin: 0;
+    }
+    
+    .box {       
+        font-size: 1.618rem;
+        margin: 2rem auto;
+    }
+    
+    .masthead-bg {
+        padding: 1% 0;
+        clear: both;
+    }
+    
+    #tag-line {
+        font-size: 6rem;
+        text-align: left;
+    }
+    
+    figure {
+        width: 40%;
+        margin: 0 2rem 1rem 0;
+    }
+    
+    .floatcorrect {
+        float: left;
+        width: 50%;
+        padding: 0.5rem;
+    }
+    
+    .floatcorrect figure {
+        width: 100%;
+    }
+    
+    footer {
+        clear: both;
+    }
+    
+    .footer-bg .box {
+        text-align: left; 
+    }
+}
